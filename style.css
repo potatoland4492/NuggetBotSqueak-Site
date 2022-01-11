@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spline+Sans&family=Ubuntu+Mono&display=swap');
+
 
 body {
   font-family: 'Spline Sans', sans-serif;
@@ -11,7 +12,7 @@ body {
 header {
   background-color: #DC143C;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
   padding: 0.5em;
 }
@@ -23,6 +24,10 @@ header > h1 {
 main {
   margin: 0;
   padding: 1em;
+  padding-top: 0;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 2em;
 }
 main a {
   font-weight: bold;
@@ -31,6 +36,47 @@ main a {
 }
 article {
   padding: 1em;
-  border-bottom: solid 10px #fffacd;
+  border-bottom: solid 5px #fffacd;
   margin-bottom: 10px;
+}
+
+button#add-bot-button {
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  margin: 0 auto;
+  padding: 1em;
+  padding-left: auto;
+  padding-right: auto;
+  background-color: #7289DA;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+}
+button#add-bot-button > img {
+  height: 1.25em;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.25em;
+  padding: 0;
+}
+button#add-bot-button:hover {
+  cursor: pointer;
+}
+
+span.code {
+  background-color: #888888;
+  padding: 3px;
+  border-radius: 5px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+span.discord-message {
+  background-color: #7289DA;
+  padding: 3px;
+  border-radius: 5px;
+  font-family: Roboto, sans-serif;
 }
