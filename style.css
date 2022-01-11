@@ -25,10 +25,11 @@ main {
   padding: 1em;
 }
 main a {
-  color: #191970;
+  color: #FFD700;
   text-decoration: underline;
 }
 article {
+  padding: 1em;
   border-bottom: solid 10px #fffacd;
   margin-bottom: 10px;
 }
