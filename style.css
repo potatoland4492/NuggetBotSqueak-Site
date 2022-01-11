@@ -9,5 +9,19 @@ body {
 header {
   background-color: #DC143C;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
+  margin: 0;
+  height: fit-content;
+}
+
+main {
+  margin: 0;
+  padding: 1em;
+}
+main > a {
+  color: #191970;
+  text-decoration: underline;
+}
+article {
+  border-bottom: solid 10px #BDB76B;
 }
