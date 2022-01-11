@@ -24,10 +24,11 @@ main {
   margin: 0;
   padding: 1em;
 }
-main > a {
+main a {
   color: #191970;
   text-decoration: underline;
 }
 article {
-  border-bottom: solid 10px #BDB76B;
+  border-bottom: solid 10px #fffacd;
+  margin-bottom: 10px;
 }
