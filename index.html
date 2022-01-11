@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <meta name="charset" charset="utf-8">
+    <meta name="author" content="Akhil Pillai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="NuggetBotSqueak, squeakynugget, Discord bot, Discord, ">
+		<meta name="description" content="Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the support server, bot invite, and more!">
 		<title>NuggetBotSqueak</title>
-		<meta name="description" content="">
 		<link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Bot-Logo-1018x1024.png" type="image/png">
 	</head>
 	<body>
 		<header>
@@ -11,22 +16,37 @@
 		</header>
 		<main>
       <article id='welcome'>
-        <p>Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the development server, support server, and more.</p>
-        <button id='add-bot-button'>Add NuggetBotSqueak to your Discord Server!</button>
+        <p>Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the development server, support server, and more. If you don't know what this bot does, keep reading!</p>
+        <button id='add-bot-button'>Add NuggetBotSqueak to your Discord Server!<img src='https://theme.zdassets.com/theme_assets/678183/84b82d07b293907113d9d4dafd29bfa170bbf9b6.ico'></button>
       </article>
       <article id='about-bot'>
-        <p>NuggetBotSqueak is a general multipurpose Discord bot. It has yes/no polls, advanced polls, an arson command, and more!</p>
+				<h2>About NuggetBotSqueak</h2>
+        <p>NuggetBotSqueak is a general multipurpose Discord bot that is written in <a href='https://nodejs.org'>Node.js</a> and uses <a href='https://discord.js.org'>Discord.js</a> (you probably don't care, so I don't know why this is here). It has yes/no polls, advanced polls, an arson command, swear censoring, and more! NuggetBotSqueak's prefix is <span class='code'>;</span>. (If you don't know what that means - highly unlikely - it means that to run the <span class='code'>help</span> command, you would send the message <span class='code'>;help</span>).</p>
+				<h2>Features (in detail)</h2>
+				<h3>Censoring</h3>
+				<p>When a user sends a message that includes anything from the blacklist, NuggetBotSqueak will delete the message and send a log message in the server's system channel in the following format: "<span class='discord-message'>Deleted message from ${user} in ${channel}. Timestamp: ${MM}/${dd}/${yyyy} ${HH}:${mm}:${ss}</span>". A complete list of swears can be found in the code. The blacklist is not made readily available for a reason.</p>
       </article>
       <article id='links'>
+				<h2>Useful Links</h2>
         <ul>
 					<li><a href='https://stats.uptimerobot.com/oJ59mUD826'>Status Page</a></li>
           <li><a href='https://discord.gg/'>Support Server</a></li>
           <li><a href='https://discord.gg/'>Development Server</a></li>
           <li><a href='https://github/potatoland4492/NuggetBotSqueak'>Git Repository on Github</a></li>
         </ul>
-      </article>
-    </main>
+			</article>
+			<article id='developer'>
+				<h2>Developers</h2>
+				<h3>New/Potential Developers</h3>
+				<p>If you are interested in helping to develop this bot, please leave a comment on <a href='https://github/potatoland4492/NuggetBotSqueak'>the Git Repository on Github</a>, or join <a href='https://discord.gg/'>the Development Server</a>.</p>
+				<h3>Current Developers</h3>
+				<ul>
+					<li><a href='https://replit.com/@akhilpil0308/NuggetBotSqueak#index.js'>The Repl on Replit</a></li>
+					<li><a href='https://discord.js.org/#/docs/main/v12/general/welcome'>Discord.js v12 Documentation</a></li>
+				</ul>
+			</article>
+		</main>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 		<script src='script.js'></script>
-  </body>
+	</body>
 </html>
