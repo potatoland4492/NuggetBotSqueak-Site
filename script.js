@@ -1,5 +1,5 @@
-let joinbtn = document.body.getElementById('add-bot-button'); // document.getElementById() ?
+let joinbtn = document.getElementById('add-bot-button');
 
-joinbtn.addEventListener('click', {
-  window.open('https://discord.com/'). // Edit URL
-}) // ?
+joinbtn.addEventListener('click', function(){
+  window.open('https://discord.com/oauth2/'); // Edit invite URL
+});
