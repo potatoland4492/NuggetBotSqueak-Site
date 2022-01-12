@@ -20,6 +20,10 @@ header > h1 {
   margin: 0;
   padding: 0;
 }
+header:hover {
+  background-color: #FFFFFF;
+  color: #DC143C;
+}
 
 main {
   margin: 0;
@@ -55,7 +59,7 @@ button#add-bot-button {
   align-content: center;
   text-align: center;
 }
-button#add-bot-button > img {
+button.discord-button > img {
   height: 1.25em;
   margin: 0;
   margin-top: auto;
@@ -63,8 +67,10 @@ button#add-bot-button > img {
   margin-left: 0.25em;
   padding: 0;
 }
-button#add-bot-button:hover {
+button.discord-button:hover {
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #7289DA;
 }
 
 span.code {
