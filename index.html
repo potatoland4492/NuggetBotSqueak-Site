@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="NuggetBotSqueak, squeakynugget, Discord bot, Discord, ">
 		<meta name="description" content="Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the support server, bot invite, and more!">
-		<title>NuggetBotSqueak</title>
+		<title>NuggetBotSqueak Official Website</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Bot-Logo-1018x1024.png" type="image/png">
 	</head>
@@ -23,26 +23,35 @@
 				<h2>About NuggetBotSqueak</h2>
         <p>NuggetBotSqueak is a general multipurpose Discord bot that is written in <a href='https://nodejs.org'>Node.js</a> and uses <a href='https://discord.js.org'>Discord.js</a> (you probably don't care, so I don't know why this is here). It has yes/no polls, advanced polls, an arson command, swear censoring, and more! NuggetBotSqueak's prefix is <span class='code'>;</span>. (If you don't know what that means - highly unlikely - it means that to run the <span class='code'>help</span> command, you would send the message <span class='code'>;help</span>).</p>
 				<h2>Features (in detail)</h2>
+				<p>This is the command format used: <span class='code'>[whatever]</span> is a required one-word option. <span class='code'>[two words]</span>represents a multiple word option. This means that there will be seperators between options. <span class='code'>{something}</span> represents an optional single-word option. <span class='code'>{multiple word option</span>represents an optional multiple word option. Multiple-word options will always have a certain seperator (i.e. <span class='code'>;;</span>) between each other. <span class='code'>[#channel]</span> means you have to mention a channel, and <span class='code'>[@user]</span> requires a user mention.</p>
 				<h3>Censoring</h3>
 				<p>When a user sends a message that includes anything from the blacklist, NuggetBotSqueak will delete the message and send a log message in the server's system channel in the following format: "<span class='discord-message'>Deleted message from ${user} in ${channel}. Timestamp: ${MM}/${dd}/${yyyy} ${HH}:${mm}:${ss}</span>". A complete list of swears can be found in the code. The blacklist is not made readily available for a reason.</p>
+				<h3>Polls</h3>
+				<h4>Yes/No Polls</h4>
+				<p>The <span class='code'>simpoll</span> command creates an embedded yes/no poll. The command's format is as follows: <span class='code'>;simpoll [#poll-channel] [poll question]</span>.</p>
+				<h4>Advanced Polls</h4>
+				<p>The <span class='code'>advpoll</span> command creates an embedded advanced poll. The command's format is as follows: <span class='code'>;advpoll [#poll-channel] [poll question] ;q; [option 1] ;; [option 2] ;; {option 3} ;; {option 4} ;; {option 5} ;; {option 6} ;; {option 7} ;; {option 8} ;; {option 9} ;; {option 10}</span>.</p>
+				<h3>Announcements</h3>
+				<p>The <span class='code'>announce</span> command creates an embedded announcement in the specified channel. The command format is as follows: <span class='code'>;announce [#announcement-channel] [announcement message]</span>.</p>
       </article>
       <article id='links'>
 				<h2>Useful Links</h2>
         <ul>
-					<li><a href='https://stats.uptimerobot.com/oJ59mUD826'>Status Page</a></li>
-          <li><a href='https://discord.gg/'>Support Server</a></li>
-          <li><a href='https://discord.gg/'>Development Server</a></li>
-          <li><a href='https://github/potatoland4492/NuggetBotSqueak'>Git Repository on Github</a></li>
+					<li><a href='https://stats.uptimerobot.com/oJ59mUD826'>Uptimerobot status page</a></li>
+          <li><a href='https://discord.gg/'>Support server (this link needs to be fixed)</a></li>
+          <li><a href='https://discord.gg/'>Development server (this link needs to be fixed)</a></li>
         </ul>
 			</article>
 			<article id='developer'>
-				<h2>Developers</h2>
+				<h2>Developer Resources</h2>
 				<h3>New/Potential Developers</h3>
-				<p>If you are interested in helping to develop this bot, please leave a comment on <a href='https://github/potatoland4492/NuggetBotSqueak'>the Git Repository on Github</a>, or join <a href='https://discord.gg/'>the Development Server</a>.</p>
+				<p>If you are interested in helping to develop this bot or this website, please leave a comment on <a href='https://github/potatoland4492/NuggetBotSqueak'>the bot's git repository on Github</a> or <a href='https://github.com/potatoland4492/NuggetBotSqueak-Site'>this website's git repository on Github</a>, or join <a href='https://discord.gg/'>the development server for both the bot and this website.</a>.</p>
 				<h3>Current Developers</h3>
 				<ul>
 					<li><a href='https://replit.com/@akhilpil0308/NuggetBotSqueak#index.js'>The Repl on Replit</a></li>
 					<li><a href='https://discord.js.org/#/docs/main/v12/general/welcome'>Discord.js v12 Documentation</a></li>
+					<li><a href='https://github.com/potatoland4492/NuggetBotSqueak'>The bot's git repository on Github</a></li>
+					<li><a href='https://github.com/potatoland4492/NuggetBotSqueak-Site'>This website's git repository on Github</a></li>
 				</ul>
 			</article>
 		</main>
