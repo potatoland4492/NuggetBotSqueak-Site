@@ -44,11 +44,11 @@ article {
   margin-bottom: 10px;
 }
 
-button#add-bot-button {
+button.discord-button {
   border: none;
   border-radius: 30px;
   display: flex;
-  margin: 0 auto;
+  margin: 15px auto;
   padding: 1em;
   padding-left: auto;
   padding-right: auto;
