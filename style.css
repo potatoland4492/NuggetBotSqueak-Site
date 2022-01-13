@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spline+Sans&family=Ubuntu+Mono&display=swap');
 
-
 body {
 	font-family: 'Spline Sans', sans-serif;
 	background-color: #008080;
 	color: #FFFFFF;
 	margin: 0;
 	padding: 0;
+}
+*:focus {
+	border: solid 2px #000000;
 }
 
 header {
