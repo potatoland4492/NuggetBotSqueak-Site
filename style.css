@@ -92,3 +92,14 @@ span.discord-message {
 	border-radius: 5px;
 	font-family: Roboto, sans-serif;
 }
+
+img#simpoll-img {
+	height: 10em;
+	display: flex;
+	margin: 0 auto;
+}
+img#advpoll-img {
+	height: 15em;
+	display: flex;
+	margin: 0 auto;
+}
