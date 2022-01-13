@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <meta name="charset" charset="utf-8">
-    <meta name="author" content="Akhil Pillai">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="NuggetBotSqueak, squeakynugget, Discord bot, Discord, ">
+		<meta name="charset" charset="utf-8">
+		<meta name="author" content="Akhil Pillai">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="NuggetBotSqueak, squeakynugget, Discord bot, Discord, ">
 		<meta name="description" content="Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the support server, bot invite, and more!">
 		<title>NuggetBotSqueak Official Website</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Bot-Logo-1018x1024.png" type="image/png">
+		<link rel="stylesheet" href="./style.css" type="text/css">
+		<link rel="icon" href="https://pnggrid.com/wp-content/uploads/2021/05/Discord-Bot-Logo-1018x1024.png" type="image/png">
 	</head>
 	<body>
 		<header tabindex="0">
 			<h1>NuggetBotSqueak Official Website</h1>
 		</header>
 		<main>
-      <article id='welcome'>
-        <p>Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the development server, support server, and more. If you don't know what this bot does, keep reading!</p>
-        <button id='add-bot-button'>Add NuggetBotSqueak to your Discord Server!<img src='https://theme.zdassets.com/theme_assets/678183/84b82d07b293907113d9d4dafd29bfa170bbf9b6.ico'></button>
-      </article>
-      <article id='about-bot'>
+			<article id='welcome'>
+				<p>Welcome to the official website for the NuggetBotSqueak Discord bot! Here you can find links to the development server, support server, and more. If you don't know what this bot does, keep reading!</p>
+				<button id='add-bot-button' class='discord-button'>Add NuggetBotSqueak to your Discord server!<img src='https://theme.zdassets.com/theme_assets/678183/84b82d07b293907113d9d4dafd29bfa170bbf9b6.ico'></button>
+				<button id='join-server-button' class='discord-button'>Join the official NuggetBotSqueak support and development Discord server!<img src='https://theme.zdassets.com/theme_assets/678183/84b82d07b293907113d9d4dafd29bfa170bbf9b6.ico'></button>
+			</article>
+			<article id='about-bot'>
 				<h2>About NuggetBotSqueak</h2>
-        <p>NuggetBotSqueak is a general multipurpose Discord bot that is written in <a href='https://nodejs.org'>Node.js</a> and uses <a href='https://discord.js.org'>Discord.js</a> (you probably don't care, so I don't know why this is here). It has yes/no polls, advanced polls, an arson command, swear censoring, and more! NuggetBotSqueak's prefix is <span class='code'>;</span>. (If you don't know what that means - highly unlikely - it means that to run the <span class='code'>help</span> command, you would send the message <span class='code'>;help</span>).</p>
+				<p>NuggetBotSqueak is a general multipurpose Discord bot that is written in <a href='https://nodejs.org'>Node.js</a> and uses <a href='https://discord.js.org'>Discord.js</a> (you probably don't care, so I don't know why this is here). It has yes/no polls, advanced polls, an arson command, swear censoring, and more! NuggetBotSqueak's prefix is <span class='code'>;</span>. (If you don't know what that means - highly unlikely - it means that to run the <span class='code'>help</span> command, you would send the message <span class='code'>;help</span>).</p>
 				<h2>Features (in detail)</h2>
 				<p>This is the command format used: <span class='code'>[whatever]</span> is a required one-word option. <span class='code'>[two words]</span>represents a multiple word option. This means that there will be seperators between options. <span class='code'>{something}</span> represents an optional single-word option. <span class='code'>{multiple word option</span>represents an optional multiple word option. Multiple-word options will always have a certain seperator (i.e. <span class='code'>;;</span>) between each other. <span class='code'>[#channel]</span> means you have to mention a channel, and <span class='code'>[@user]</span> requires a user mention.</p>
 				<h3>Censoring</h3>
@@ -29,35 +30,58 @@
 				<h3>Polls</h3>
 				<h4>Yes/No Polls</h4>
 				<p>The <span class='code'>simpoll</span> command creates an embedded yes/no poll. The command's format is as follows: <span class='code'>;simpoll [#poll-channel] [poll question]</span>.</p>
-				<img src='./files/simpoll.png'>
 				<h4>Advanced Polls</h4>
 				<p>The <span class='code'>advpoll</span> command creates an embedded advanced poll. The command's format is as follows: <span class='code'>;advpoll [#poll-channel] [poll question] ;q; [option 1] ;; [option 2] ;; {option 3} ;; {option 4} ;; {option 5} ;; {option 6} ;; {option 7} ;; {option 8} ;; {option 9} ;; {option 10}</span>.</p>
-				<img src='./files/advpoll.png'>
-				<h3>Coming Soon - Announcements</h3>
+				<h3>Announcements</h3>
 				<p>The <span class='code'>announce</span> command creates an embedded announcement in the specified channel. The command format is as follows: <span class='code'>;announce [#announcement-channel] [announcement message]</span>.</p>
-      </article>
-      <article id='links'>
+				<!-- 
+					case 'announce':
+						if (args.length < 1) {
+							message.reply("Mention a channel.");
+							break;
+						} else {
+							global.arg0 = args.shift();
+							global.arg0mention = message.mentions.channel.first();
+						}if (args.length = 1) {
+							message.reply("Add an announcement message.");
+							break;
+						} 
+						if (global.arg0 == global.arg0mention) {
+							message.channel.send(`Your announcement is ready in ${announceChannel}!`);
+							announceChannel.send(new MessageEmbed()
+								.setTitle(`New announcement by ${message.author}`)
+								.setDescription(`${args.join(' ')}`)
+								.setFooter(`Announcement powered by NuggetBotSqueak`)
+							);
+							break
+						} else {
+							message.reply("Mention a channel.");
+							break;
+						}
+				 -->
+			</article>
+			<article id='links'>
 				<h2>Useful Links</h2>
-        <ul>
+				<ul>
 					<li><a href='https://stats.uptimerobot.com/oJ59mUD826'>Uptimerobot status page</a></li>
-          <li><a href='https://discord.gg/'>Support server (this link needs to be fixed)</a></li>
-          <li><a href='https://discord.gg/'>Development server (this link needs to be fixed)</a></li>
-        </ul>
+					<li><a href='https://discord.gg/'>Official support server (this link needs to be fixed)</a></li>
+				</ul>
 			</article>
 			<article id='developer'>
 				<h2>Developer Resources</h2>
 				<h3>New/Potential Developers</h3>
-				<p>If you are interested in helping to develop this bot or this website, please leave a comment on <a href='https://github/potatoland4492/NuggetBotSqueak'>the bot's git repository on Github</a> or <a href='https://github.com/potatoland4492/NuggetBotSqueak-Site'>this website's git repository on Github</a>, or join <a href='https://discord.gg/'>the development server for both the bot and this website.</a>.</p>
+				<p>If you are interested in helping to develop this bot or this website, please leave a comment on <a href='https://github/potatoland4492/NuggetBotSqueak'>the bot's git repository on Github</a> or <a href='https://github.com/potatoland4492/NuggetBotSqueak-Site'>this website's git repository on Github</a>, or join <a href='https://discord.gg/'>the development server for both the bot and this website (this link needs to be fixed)</a>.</p>
 				<h3>Current Developers</h3>
 				<ul>
-					<li><a href='https://replit.com/@akhilpil0308/NuggetBotSqueak#index.js'>The Repl on Replit</a></li>
+					<li><a href='https://replit.com/@akhilpil0308/NuggetBotSqueak#index.js'>NuggetBotSqueak's Repl on Replit</a></li>
 					<li><a href='https://discord.js.org/#/docs/main/v12/general/welcome'>Discord.js v12 Documentation</a></li>
-					<li><a href='https://github.com/potatoland4492/NuggetBotSqueak'>The bot's git repository on Github</a></li>
+					<li><a href='https://github.com/potatoland4492/NuggetBotSqueak'>NuggetBotSqueak's git repository on Github</a></li>
 					<li><a href='https://github.com/potatoland4492/NuggetBotSqueak-Site'>This website's git repository on Github</a></li>
+					<li><a href='https://discord.gg/'>Official development server (this link needs to be fixed)</a></li>
 				</ul>
 			</article>
 		</main>
 		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-		<script src='script.js'></script>
+		<script src='./script.js'></script>
 	</body>
 </html>

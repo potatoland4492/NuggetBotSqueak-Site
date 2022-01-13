@@ -2,81 +2,91 @@
 
 
 body {
-  font-family: 'Spline Sans', sans-serif;
-  background-color: #008080;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
+	font-family: 'Spline Sans', sans-serif;
+	background-color: #008080;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-  background-color: #DC143C;
-  text-align: center;
-  font-size: 2em;
-  margin: 0;
-  padding: 0.5em;
+	background-color: #DC143C;
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+	padding: 0.5em;
 }
 header > h1 {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+}
+header:hover, header:focus {
+	background-color: #FFFFFF;
+	color: #DC143C;
 }
 
 main {
-  margin: 0;
-  padding: 1em;
-  padding-top: 0;
-  font-size: 1.25em;
-  font-weight: 500;
-  line-height: 2em;
+	margin: 0;
+	padding: 1em;
+	padding-top: 0;
+	font-size: 1.25em;
+	font-weight: 500;
+	line-height: 2em;
 }
 main a {
-  font-weight: bold;
-  color: #FFD700;
-  text-decoration: underline;
+	font-weight: bold;
+	color: #FFD700;
+	text-decoration: underline;
+}
+main a:hover, main a:focus {
+	color: #008080;
+	background-color: #FFD700;
 }
 article {
-  padding: 1em;
-  border-bottom: solid 5px #fffacd;
-  margin-bottom: 10px;
+	padding: 1em;
+	border-bottom: solid 5px #fffacd;
+	margin-bottom: 10px;
 }
 
-button#add-bot-button {
-  border: none;
-  border-radius: 30px;
-  display: flex;
-  margin: 0 auto;
-  padding: 1em;
-  padding-left: auto;
-  padding-right: auto;
-  background-color: #7289DA;
-  color: #FFFFFF;
-  font-size: 1.5em;
-  font-weight: bold;
-  align-content: center;
-  text-align: center;
+button.discord-button {
+	border: none;
+	border-radius: 30px;
+	display: flex;
+	margin: 15px auto;
+	padding: 1em;
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #7289DA;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	font-weight: bold;
+	align-content: center;
+	text-align: center;
 }
-button#add-bot-button > img {
-  height: 1.25em;
-  margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0.25em;
-  padding: 0;
+button.discord-button > img {
+	height: 1.25em;
+	margin: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 0.25em;
+	padding: 0;
 }
-button#add-bot-button:hover {
-  cursor: pointer;
+button.discord-button:hover, button.discord-button:focus {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	color: #7289DA;
 }
 
 span.code {
-  background-color: #888888;
-  padding: 3px;
-  border-radius: 5px;
-  font-family: 'Ubuntu Mono', monospace;
+	background-color: #888888;
+	padding: 3px;
+	border-radius: 5px;
+	font-family: 'Ubuntu Mono', monospace;
 }
 
 span.discord-message {
-  background-color: #7289DA;
-  padding: 3px;
-  border-radius: 5px;
-  font-family: Roboto, sans-serif;
+	background-color: #7289DA;
+	padding: 3px;
+	border-radius: 5px;
+	font-family: Roboto, sans-serif;
 }
